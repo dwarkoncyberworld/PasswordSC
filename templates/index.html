@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+
+    <div class="card">
+      <label for="pwd">Enter password</label>
+      <input id="pwd" type="password" placeholder="Type your password..." autocomplete="off" />
+      <div id="meter" class="meter">
+        <div id="meter-bar" class="meter-bar"></div>
+      </div>
+      <div class="meta">
+        <span id="label">--</span>
+        <span id="entropy">Entropy: --</span>
+      </div>
+
+      <div id="issues" class="issues"></div>
+
+      <div class="suggestions">
+        <h4>Suggestions</h4>
+        <ul id="suggest-list"></ul>
+      </div>
+
+      <div class="note">Privacy: the password is evaluated in memory and not stored.</div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

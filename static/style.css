@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7dd3fc;
+  --good:#34d399;
+  --warn:#f59e0b;
+  --bad:#ef4444;
+  --muted:#94a3b8;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#071226 0%, #071a2d 100%);color:#e6eef8;display:flex;align-items:center;justify-content:center;padding:24px;}
+.container{width:100%;max-width:720px;}
+h1{text-align:center;margin-bottom:18px;font-weight:600;}
+.card{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+label{display:block;margin-bottom:8px;color:var(--muted);}
+input[type=password]{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;font-size:16px;outline:none;}
+.meter{height:12px;background:rgba(255,255,255,0.03);border-radius:999px;margin-top:12px;overflow:hidden;}
+.meter-bar{height:100%;width:0%;transition:width .22s ease;background:linear-gradient(90deg,var(--bad),var(--warn),var(--good));}
+.meta{display:flex;justify-content:space-between;margin-top:10px;font-size:14px;color:var(--muted);}
+.issues{margin-top:12px;color:#ffdede;background:rgba(255,0,0,0.03);padding:8px;border-radius:8px;display:none;}
+.suggestions{margin-top:12px;}
+.suggestions h4{margin:0 0 8px 0;color:var(--muted);font-weight:600;}
+.suggestions ul{margin:0;padding-left:18px;}
+.suggestions li{margin:6px 0;color:var(--muted);}
+.note{margin-top:12px;font-size:13px;color:#9fb0c6;}
